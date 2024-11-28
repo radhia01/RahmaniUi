@@ -35,7 +35,7 @@ function Templates() {
     technologies:"React.js,Tailwind CSS"
 }];
   return (
-    <section className=" w-full min-h-screen    py-56       " id="templates">
+    <section className=" w-full min-h-screen    py-56      dark:bg-black    " id="templates">
        <div className="grid grid-cols-1   gap-40  justify-center items-center ">
 {templates.map(template=>{
   return <div className="flex  justify-center " key={template.id} ><TemplateCard template={template}/></div> 

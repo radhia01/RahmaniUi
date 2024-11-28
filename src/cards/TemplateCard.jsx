@@ -5,14 +5,14 @@ function TemplateCard({ template }) {
 
   return (
     <div
-      className={`shadow rounded-lg py-3 px-2 relative w-[60%] gap-2 ${seeLivePreview && "bg-black bg-opacity-50 z-70"}`}
+      className={`shadow rounded-lg py-3 px-2 relative w-[60%] gap-2  dark:border-gray-400 ${seeLivePreview && "bg-black bg-opacity-50 z-70"}`}
       onMouseEnter={() => setseeLivePreview(template.id)}
       onMouseLeave={() => setseeLivePreview(null)}
     >
-      <div className="grid grid-rows-8">
+   
         
         {/* Image avec superposition */}
-        <div className="relative row-span-7">
+        <div className="relative h-80   ">
           <img
             className="h-full w-full object-cover"
             src={template.img}
@@ -34,11 +34,11 @@ function TemplateCard({ template }) {
         </div>
         
         {/* Titre et technologies */}
-        <div className={`py-3 row-span-1 transition-opacity duration-300 ${seeLivePreview ? "opacity-20" : "opacity-100"}`}>
+        <div className={`py-3  transition-opacity  dark:text-white  dark:border duration-300 ${seeLivePreview ? "opacity-20" : "opacity-100"}`}>
           <h1 className="font-bold">{template.title}</h1>
           <h1>{template.technologies}</h1>
         </div>
-      </div>
+     
     </div>
   );
 }

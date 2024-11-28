@@ -64,7 +64,7 @@ function Card() {
   return (
   <div className=" ">
     {/* : */}
-    <div className="w-full border border-gray-200 flex flex-col    m-4  py-4 ">
+    <div className="w-full border border-white flex flex-col     m-4  py-4 ">
         <div className="flex justify-center w-full ">
             <div className="rounded-xl relative w-[300px] h-[300px] ">
             {/* Overlay */}
@@ -84,14 +84,14 @@ function Card() {
             </div>
         </div>
    
-        <div className="   mt-4  overflow-auto h-64 p-4 border  flex justify-center border-gray-300 rounded-lg">
+        <div className="   mt-4  overflow-auto h-64 p-4  flex justify-center  rounded-lg ">
           <Prism language="jsx" style={solarizedlight} >
             {codeString}
           </Prism>
         </div>
     </div>
 
-    <div className="w-full border border-gray-200 flex flex-col    py-4 m-4 ">
+    <div className="w-full border border-white flex flex-col    py-4 m-4 ">
         <div className="flex justify-center w-full ">
             <div className="  w-[300px]  flex flex-col  rounded-lg   bg-black  shadow ">
                 <div className=" relative h-56 overflow-hidden "><img src={image} className=''/></div>
@@ -106,16 +106,16 @@ function Card() {
             </div>
         </div>
    
-        <div className="   mt-4  overflow-auto h-64 p-4 border  flex justify-center border-gray-300 rounded-lg">
+        <div className="   mt-4  overflow-auto h-64 p-4   flex justify-center  rounded-lg">
           <Prism language="jsx" style={solarizedlight} >
             {codeString2}
           </Prism>
         </div>
     </div>
 
-    <div className="w-full border border-gray-200 flex flex-col    py-4 m-4 ">
+    <div className="w-full border border-white  flex flex-col    py-4 m-4 ">
         <div className="flex justify-center w-full ">
-            <div className="  w-[400px]  flex flex-col  rounded-lg   bg-transparent   shadow ">
+            <div className="  w-[400px]  flex flex-col  bg-white rounded-lg   bg-transparent   shadow ">
                 <div className=" relative h-40 overflow-hidden  flex justify-center py-4"><img src={user} className='rounded-full  w-32 h-32 '/></div>
                 <div className="border-t border-gray-400"></div>
                 <div className="   p-2  flex flex-col gap-4  "> 
@@ -128,7 +128,7 @@ function Card() {
                 </div>
             </div>
    
-        <div className="   mt-4  overflow-auto h-64 p-4 border  flex justify-center border-gray-300 rounded-lg">
+        <div className="   mt-4  overflow-auto h-64 p-4   flex justify-center  rounded-lg">
           <Prism language="jsx" style={solarizedlight} >
             {codeString3}
           </Prism>
@@ -136,7 +136,7 @@ function Card() {
     </div>
          
 
-    <div className="w-full border border-gray-200 flex flex-col    py-4 m-4 ">
+    <div className="w-full border border-white flex flex-col    py-4 m-4 ">
        
         <div className="flex  w-full py-4  h-[400px] px-2 justify-center ">
             <div className="  w-[350px]    rounded-lg   bg-transparent   shadow ">
@@ -149,7 +149,7 @@ function Card() {
             })}</div>
         </div>
             
-        <div className="   mt-4  overflow-auto h-64 p-4 border  flex justify-center border-gray-300 rounded-lg">
+        <div className="   mt-4  overflow-auto h-64 p-4   flex justify-center  rounded-lg">
           <Prism language="jsx" style={solarizedlight} >
             {codeString3}
           </Prism>

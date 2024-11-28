@@ -1,45 +1,86 @@
-import React from 'react'
-import { useState } from 'react'
+
+import { React,useState } from 'react'
 import Button from '../components/Button'
 import Card from '../components/Card'
-
+import Form from "../components/Form"
+import Modal from '../components/Modal'
+import Nav from '../components/Nav'
 function UIComponents() {
-  const [showButtons, setshowButtons] = useState(false)
+  const [showButtons, setshowButtons] = useState(true)
   const [showCards, setshowCards] = useState(false)
   const [showForms, setshowForms] = useState(false)
   const [showModals, setshowModals] = useState(false)
   const [showNav, setshowNav] = useState(false)
+  const [selectedItem, setSelectedItem] = useState("")
+  const handleSelectedItem=(item)=>{
+    setSelectedItem(item)
+  }
   const handleShowButtons=()=>{
     setshowButtons(true)
     setshowCards(false)
     setshowModals(false)
     setshowNav(false)
+    setshowForms(false)
+    setSelectedItem("button")
   }
   const handleShowCards=()=>{
     setshowButtons(false)
     setshowCards(true)
     setshowModals(false)
     setshowNav(false)
+    setshowForms(false)
+    handleSelectedItem("card")
   }
-
+  const handleShowForms=()=>{
+    setshowButtons(false)
+    setshowCards(false)
+    setshowModals(false)
+    setshowNav(false)
+    setshowForms(true)
+    handleSelectedItem("form")
+  }
+  const handleShowModals=()=>{
+    setshowButtons(false)
+    setshowCards(false)
+    setshowModals(true)
+    setshowNav(false)
+    setshowForms(false)
+    handleSelectedItem("modal")
+  }
+  const handleShowNav=()=>{
+    setshowButtons(false)
+    setshowCards(false)
+    setshowModals(false)
+    setshowNav(true)
+    setshowForms(false)
+    setSelectedItem("nav")
+  }
+      
+      
   return (
-    <section className=' relative min-h-screen w-full  flex  py-40 ' id="composants">
+    <section className=' relative min-h-screen w-full  flex  bg-gray-200   py-40  dark:bg-black ' id="components">
 
 <div className="w-64  absolute left-0    "><ul>
-  <li  className='py-4 mx-2 bg-gray-100 m-2 hover:bg-yellow-500 hover:text-white '>  <button onClick={handleShowButtons}>Button</button>
+  <li  className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="button"?"text-yellow-500":""}`}>  <button onClick={handleShowButtons}>Boutton</button>
     </li>
-    <li className='py-4 mx-2 bg-gray-100 m-2 hover:bg-yellow-500 hover:text-white'> <button  onClick={handleShowCards}>Cartes</button> 
+    <li className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="card"?"text-yellow-500":""}`}> <button  onClick={handleShowCards}>Carte</button> 
     </li>
-    <li className='py-4 mx-2 bg-gray-100 m-2 hover:bg-yellow-500 hover:text-white'>  <button>Formulaires</button> 
+    <li className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="form"?"text-yellow-500":""}`}>  <button onClick={handleShowForms}>Formulaire</button> 
     </li>
-    <li className='py-4 mx-2 bg-gray-100 m- hover:bg-yellow-500 hover:text-white'> <button>Modales</button> 
+    <li className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="modal"?"text-yellow-500":""}`}> <button onClick={handleShowModals}> Modal</button> 
     </li>
-    <li className='py-4 mx-2 bg-gray-100 m-2 hover:bg-yellow-500 hover:text-white '>  <button>Barres de Navigation</button>
+    <li className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="nav"?"text-yellow-500":""}`}>  <button onClick={handleShowNav}>Barres de Navigation</button>
     </li>
     
     </ul></div>
-    <div className=" ml-80 w-[70%]    justify-center ">{showButtons && <Button/>}
-    {showCards && <Card/>}</div>
+    <div className=" ml-80 w-[70%]    py-8 justify-center ">{showButtons && <Button/>}
+    {showCards && <Card/>}
+    {showForms && <Form/>}
+    {showModals && <Modal/>}
+    {showNav && <Nav/>}
+    
+      
+    </div>
 
     </section>
   )
