@@ -61,7 +61,7 @@ function UIComponents() {
     <section className=' relative min-h-screen w-full  flex  bg-gray-200   py-40  dark:bg-black ' id="components">
 
 <div className="w-64  absolute left-0    "><ul>
-  <li  className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="button"?"text-yellow-500":""}`}>  <button onClick={handleShowButtons}>Boutton</button>
+  <li  className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="button"?"text-yellow-500":""}`}>  <button onClick={handleShowButtons}>Bouton</button>
     </li>
     <li className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="card"?"text-yellow-500":""}`}> <button  onClick={handleShowCards}>Carte</button> 
     </li>

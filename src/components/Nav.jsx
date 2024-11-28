@@ -33,7 +33,7 @@ function Nav() {
         href:"#",
         icon:<FaThList/>
     }]
-    const [showLeftSidebar, setshowLeftSidebar] = useState(false)
+    const [showLeftSidebar, setshowLeftSidebar] = useState(true)
     const [showTopSidebar, setshowTopSidebar] = useState(false)
   
     const codeString=`
@@ -178,7 +178,7 @@ function Nav() {
     
     `
   return (
-    <div className='w-full h-full py-20 '>
+    <div className='w-full h-full py-20  '>
          <div className=" flex justify-between bg-blue-900 text-white py-4 px-2 items-center  ">
             <a href="" className='text-3xl font-bold  text-yellow-400'><FaShoppingCart/></a>
             <ul className='flex gap-4 '>
@@ -196,8 +196,8 @@ function Nav() {
                     {codeString}
                 </Prism>
           </div>
-
-
+    <div className='border-b border-gray-800 w-full  h-10 py-7'></div>
+     <div className="bg-white"></div>
           <div className="   mt-20 flex flex-col   bg-indigo-950 shadow   text-black   py-10   w-64 px-10 items-center  rounded-lg  ">
             <a href="" className='text-3xl font-bold  text-yellow-400  mb-2'> Admin Dashboard</a>
             <div className=' border  w-full border-t border-white'></div>
@@ -218,7 +218,7 @@ function Nav() {
           </div>
 
 
-
+          <div className='border-b border-gray-800 w-full  h-10 py-7'></div>
         <div className="  relative  h-[500px] border  mt-20 py-4 ">  
                 {showLeftSidebar && 
                         <div className=" flex flex-col  mt-2  bg-indigo-950 shadow  h-full  text-black   py-10   w-60 px-10 items-center  rounded-lg  ">
