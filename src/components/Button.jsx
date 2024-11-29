@@ -13,8 +13,8 @@ function Button() {
   `;
 
   return (
-    <div className='px-2 '>
-      <div className='flex  justify-center items-center gap-10 py-10  px-20'>
+    <div className='px-2 '> 
+      <div className='flex  bg-white justify-center items-center gap-10 py-10  px-20'>
         <button className='rounded-lg shadow bg-blue-600  text-white py-3 px-2'>Submit</button>
         <button className='rounded-lg shadow bg-red-200 w-32 text-white py-3 px-2 font-bold hover:bg-black hover:text-red-200'>Hover Button</button>
         <button className='rounded-lg shadow bg-yellow-500 w-auto text-white py-3 px-2 font-bold flex'>

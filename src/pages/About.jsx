@@ -23,7 +23,7 @@ function About() {
     <div className="relative min-h-screen w-full bg-gray-200 py-40 dark:bg-black" id="about">
       <div className="flex flex-col py-4 px-40">
         <h1 className="text-2xl mb-6 flex justify-center dark:text-white">
-          <span className="text-4xl font-bold">RahmaniUi</span> est une bibliothèque de composants UI modernes et réactifs.
+          <span className="text-4xl font-bold mr-4 ">RahmaniUi</span> est une bibliothèque de composants UI modernes et réactifs.
         </h1>
         <p className="text-lg text-gray-700">Testez dès maintenant les composants pour une intégration simple et rapide dans vos projets React.</p>
       </div>
@@ -46,16 +46,16 @@ function About() {
 
       <div className="flex space-x-6 py-10 justify-center">
         <div className="flex items-center space-x-2">
-          <FaReact className="text-3xl text-blue-500" />
-          <span>Compatible avec React</span>
+          <FaReact className="text-3xl text-blue-500 " />
+          <span  className="dark:text-white">Compatible avec React</span>
         </div>
         <div className="flex items-center space-x-2">
-          <RiTailwindCssFill className="text-3xl text-teal-500" />
-          <span>Basé sur Tailwind CSS</span>
+          <RiTailwindCssFill className="text-3xl text-teal-500 " />
+          <span className="dark:text-white">Basé sur Tailwind CSS</span>
         </div>
         <div className="flex items-center space-x-2">
-          <SiMaterialdesignicons className="text-3xl text-indigo-500" />
-          <span>Design moderne</span>
+          <SiMaterialdesignicons className="text-3xl text-indigo-500 " />
+          <span  className="dark:text-white">Design moderne</span>
         </div>
       </div>
     </div>

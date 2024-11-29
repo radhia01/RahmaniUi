@@ -52,13 +52,13 @@ function Card() {
     </div>`
     const codeString3=`
  <div className="flex  w-full py-4  h-[400px] px-2 justify-center ">
-            <div className="  w-[350px]    rounded-lg   bg-transparent   shadow ">
-                <img src={imageToShow } className='hover:scale-125   w-full  h-full object-cover '/>
+            <div className="  w-[400px]    rounded-lg   bg-transparent   shadow ">
+                <img src={imageToShow } className=' rounded hover:scale-125   w-full  h-full object-cover '/>
             </div>
-            <div className="flex gap-2 px-3">
+            <div className="flex gap-2 px-20">
                
             {images.map(element=>{
-                return  <img  key={element.id} src={element.url} className='w-20 h-20' onMouseEnter={()=>setImageToShow(element.url)}/>
+                return  <img  key={element.id} src={element.url} className=' rounded w-20 h-20' onMouseEnter={()=>setImageToShow(element.url)}/>
             })}</div>
         </div>`
   return (
@@ -84,7 +84,7 @@ function Card() {
             </div>
         </div>
    
-        <div className="   mt-4  overflow-auto h-64 p-4  flex justify-center  rounded-lg ">
+        <div className="   mt-4  overflow-auto h-[365px]  p-4  flex justify-center  rounded-lg ">
           <Prism language="jsx" style={solarizedlight} >
             {codeString}
           </Prism>
@@ -106,7 +106,7 @@ function Card() {
             </div>
         </div>
    
-        <div className="   mt-4  overflow-auto h-64 p-4   flex justify-center  rounded-lg">
+        <div className="   mt-4  overflow-auto  p-4 h-[365px]    flex justify-center  rounded-lg">
           <Prism language="jsx" style={solarizedlight} >
             {codeString2}
           </Prism>
@@ -128,7 +128,7 @@ function Card() {
                 </div>
             </div>
    
-        <div className="   mt-4  overflow-auto h-64 p-4   flex justify-center  rounded-lg">
+        <div className="   mt-4  overflow-auto  p-4  h-[365px]    flex justify-center  rounded-lg">
           <Prism language="jsx" style={solarizedlight} >
             {codeString3}
           </Prism>
@@ -139,17 +139,17 @@ function Card() {
     <div className="w-full border border-white flex flex-col    py-4 m-4 ">
        
         <div className="flex  w-full py-4  h-[400px] px-2 justify-center ">
-            <div className="  w-[350px]    rounded-lg   bg-transparent   shadow ">
-                <img src={imageToShow } className='hover:scale-125   w-full  h-full object-cover '/>
+            <div className="  w-[400px]    rounded-lg   bg-transparent   shadow ">
+                <img src={imageToShow } className=' rounded hover:scale-125   w-full  h-full object-cover '/>
             </div>
-            <div className="flex gap-2 px-3">
+            <div className="flex gap-2 px-20">
                
             {images.map(element=>{
-                return  <img  key={element.id} src={element.url} className='w-20 h-20' onMouseEnter={()=>setImageToShow(element.url)}/>
+                return  <img  key={element.id} src={element.url} className=' rounded w-20 h-20' onMouseEnter={()=>setImageToShow(element.url)}/>
             })}</div>
         </div>
             
-        <div className="   mt-4  overflow-auto h-64 p-4   flex justify-center  rounded-lg">
+        <div className="   mt-4  overflow-auto  p-4  h-[365px]   flex justify-center  rounded-lg">
           <Prism language="jsx" style={solarizedlight} >
             {codeString3}
           </Prism>

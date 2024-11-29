@@ -58,22 +58,32 @@ function UIComponents() {
       
       
   return (
-    <section className=' relative min-h-screen w-full  flex  bg-gray-200   py-40  dark:bg-black ' id="components">
-
-<div className="w-64  absolute left-0    "><ul>
-  <li  className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="button"?"text-yellow-500":""}`}>  <button onClick={handleShowButtons}>Bouton</button>
+    <section className=' relative min-h-screen w-full  flex  flex-col  bg-gray-200   py-40  dark:bg-black ' id="components">
+      
+<div className="w-64  absolute left-2   bg-white py-10 px-2 shadow  "><ul>
+  <li  className={`py-4 mx-2 bg-gray-200 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="button"?"text-yellow-500":""}`}>  <button onClick={handleShowButtons}>Bouton</button>
     </li>
-    <li className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="card"?"text-yellow-500":""}`}> <button  onClick={handleShowCards}>Carte</button> 
+    <li className={`py-4 mx-2 bg-gray-200 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="card"?"text-yellow-500":""}`}> <button  onClick={handleShowCards}>Carte</button> 
     </li>
-    <li className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="form"?"text-yellow-500":""}`}>  <button onClick={handleShowForms}>Formulaire</button> 
+    <li className={`py-4 mx-2 bg-gray-200 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="form"?"text-yellow-500":""}`}>  <button onClick={handleShowForms}>Formulaire</button> 
     </li>
-    <li className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="modal"?"text-yellow-500":""}`}> <button onClick={handleShowModals}> Modal</button> 
+    <li className={`py-4 mx-2 bg-gray-200 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="modal"?"text-yellow-500":""}`}> <button onClick={handleShowModals}> Modal</button> 
     </li>
-    <li className={`py-4 mx-2 bg-gray-100 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="nav"?"text-yellow-500":""}`}>  <button onClick={handleShowNav}>Barres de Navigation</button>
+    <li className={`py-4 mx-2 bg-gray-200 m-2 text-bold hover:bg-yellow-500 hover:text-white ${selectedItem==="nav"?"text-yellow-500":""}`}>  <button onClick={handleShowNav}>Barres de Navigation</button>
     </li>
     
     </ul></div>
-    <div className=" ml-80 w-[70%]    py-8 justify-center ">{showButtons && <Button/>}
+    <div className=" ml-80 w-[70%]     justify-center ">
+    <div className=' flex justify-center   '>
+        <div className="bg-black w-full py-3 flex justify-start px-2"><button className="bg-dark p-2 text-yellow-500 text-sm rounded-sm shadow  border  dark:text-gray-400">
+      TaiwindCss et React
+         </button></div>
+      </div>
+         <p className="text-gray-600 dark:text-gray-400 mb-20">
+      Il est recommandé d'installer <span className="font-semibold text-yellow-500">Tailwind CSS</span> avec <span className="font-semibold text-yellow-500">ReactJS</span> pour pouvoir utiliser ces composants.
+    </p>
+      
+      {showButtons && <Button/>}
     {showCards && <Card/>}
     {showForms && <Form/>}
     {showModals && <Modal/>}
