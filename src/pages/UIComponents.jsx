@@ -75,12 +75,12 @@ function UIComponents() {
     </ul></div>
     <div className=" ml-80 w-[70%]     justify-center ">
     <div className=' flex justify-center   '>
-        <div className="bg-black w-full py-3 flex justify-start px-2"><button className="bg-dark p-2 text-yellow-500 text-sm rounded-sm shadow  border  dark:text-gray-400">
-      TaiwindCss et React
+        <div className="bg-black w-full py-3 flex  justify-start px-2 "><button className=" font-bold bg-dark p-2 text-yellow-500 text-sm rounded-sm shadow  border  dark:text-gray-400">
+      TailwindCSS et React
          </button></div>
       </div>
-         <p className="text-gray-600 dark:text-gray-400 mb-20">
-      Il est recommandé d'installer <span className="font-semibold text-yellow-500">Tailwind CSS</span> avec <span className="font-semibold text-yellow-500">ReactJS</span> pour pouvoir utiliser ces composants.
+         <p className="text-gray-600 dark:text-gray-400 mb-24">
+      Il est recommandé d'installer <span className="font-semibold text-yellow-500"><a href="https://tailwindcss.com/docs/installation">TailwindCSS</a></span> avec <span className="font-semibold text-yellow-500">ReactJS</span> pour pouvoir utiliser ces composants.
     </p>
       
       {showButtons && <Button/>}
