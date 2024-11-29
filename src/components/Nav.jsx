@@ -219,7 +219,7 @@ function Nav() {
 
 
           <div className='border-b border-gray-800 w-full  h-10 py-7'></div>
-        <div className="  relative  h-[500px] border  mt-20 py-4 ">  
+        <div className="  relative  h-[500px]  mt-20 py-4 ">  
                 {showLeftSidebar && 
                         <div className=" flex flex-col  mt-2  bg-indigo-950 shadow  h-full  text-black   py-10   w-60 px-10 items-center  rounded-lg  ">
                             <a href="" className='text-3xl font-bold  text-yellow-400  mb-2'> <FaShoppingCart/></a>

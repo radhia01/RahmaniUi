@@ -75,7 +75,8 @@ function UIComponents() {
     </ul></div>
     <div className=" ml-80 w-[70%]     justify-center ">
     <div className=' flex justify-center   '>
-        <div className="bg-black w-full py-3 flex  justify-start px-2 "><button className=" font-bold bg-dark p-2 text-yellow-500 text-sm rounded-sm shadow  border  dark:text-gray-400">
+        <div className="bg-black w-full py-3 flex  dark:bg-white  justify-start px-2 ">
+          <button className=" font-bold bg-dark p-2 text-yellow-500 text-sm rounded-sm shadow  border  dark:bg-yellow-500 dark:text-white dark:text-gray-400">
       TailwindCSS et React
          </button></div>
       </div>
