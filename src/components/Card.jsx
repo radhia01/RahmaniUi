@@ -99,9 +99,7 @@ function Card() {
                     <p className="font-bold text-xl px-2 pt-4">Sac à Dos Urbain 25L</p>
                     <p className="px-2 text-sm">capacité (25L), les matériaux (résistant à l'eau)</p>
                     <p className="px-2   font-bold text-xl  ">69,99€</p>
-                    <button className="border rounded-xl px-5 py-1 border-white bg-white text-black hover:bg-black/50 hover:text-white border-none mx-2 absolute bottom-4 right-10">
-                        Ajouter au panier 
-                    </button>     
+                       
                 </div>
             </div>
         </div>
