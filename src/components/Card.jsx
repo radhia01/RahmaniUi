@@ -24,14 +24,13 @@ function Card() {
    const [imageToShow, setImageToShow] = useState(food)
     const codeString = `
   <div className="rounded-xl relative w-[300px] h-[300px] ">
-            {/* Overlay */}
             <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
-              <p className="font-bold text-2xl px-2 pt-4">Sac à Dos Urbain 25L</p>
-              <p className="px-2">capacité (25L), les matériaux (résistant à l'eau)</p>
-              <p className="px-2   font-bold text-xl  ">69,99€</p>
-              <button className="border rounded-xl px-5 py-1 border-white bg-white text-black hover:bg-black/50 hover:text-white border-none mx-2 absolute bottom-4 right-10">
+               <p className="font-bold text-2xl px-2 pt-4">Sac à Dos Urbain 25L</p>
+               <p className="px-2">capacité (25L), les matériaux (résistant à l'eau)</p>
+               <p className="px-2   font-bold text-xl  ">69,99€</p>
+               <button className="border rounded-xl px-5 py-1 border-white bg-white text-black hover:bg-black/50 hover:text-white border-none mx-2 absolute bottom-4 right-10">
                 Ajouter au panier 
-              </button>
+               </button>
             </div>
             <img
               className="max-h-[300px]  w-full object-cover rounded-xl"
@@ -41,25 +40,23 @@ function Card() {
     </div>
   `;
   const codeString2=`<div className="  w-[300px]  flex flex-col  rounded-lg   bg-black  shadow ">
-                  <div className=" relative h-56 overflow-hidden "><img src={image} className=''/></div>
-                   <div className=" text-white "> 
-                    <p className="font-bold text-xl px-2 pt-4">Sac à Dos Urbain 25L</p>
-              <p className="px-2 text-sm">capacité (25L), les matériaux (résistant à l'eau)</p>
-              <p className="px-2   font-bold text-xl  ">69,99€</p>
-              <button className="border rounded-xl px-5 py-1 border-white bg-white text-black hover:bg-black/50 hover:text-white border-none mx-2 absolute bottom-4 right-10">
-                Ajouter au panier 
-              </button></div>
-    </div>`
+                       <div className=" relative h-56 overflow-hidden "><img src={image} className=''/></div>
+                       <div className=" text-white "> 
+                         <p className="font-bold text-xl px-2 pt-4">Sac à Dos Urbain 25L</p>
+                         <p className="px-2 text-sm">capacité (25L), les matériaux (résistant à l'eau)</p>
+                         <p className="px-2   font-bold text-xl  ">69,99€</p>
+                       </div>
+                    </div>`
     const codeString3=`
- <div className="flex  w-full py-4  h-[400px] px-2 justify-center ">
+        <div className="flex  w-full py-4  h-[400px] px-2 justify-center ">
             <div className="  w-[400px]    rounded-lg   bg-transparent   shadow ">
                 <img src={imageToShow } className=' rounded hover:scale-125   w-full  h-full object-cover '/>
             </div>
             <div className="flex gap-2 px-20">
-               
             {images.map(element=>{
                 return  <img  key={element.id} src={element.url} className=' rounded w-20 h-20' onMouseEnter={()=>setImageToShow(element.url)}/>
-            })}</div>
+            })}
+            </div>
         </div>`
   return (
   <div className=" ">
